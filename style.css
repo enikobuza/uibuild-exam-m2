@@ -1,0 +1,153 @@
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;font-family:inherit;box-sizing:border-box;}
+
+ol, 
+ul, 
+li {
+  list-style:none;
+  display:block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing:0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a{
+  cursor: pointer; 
+  color: inherit;
+}
+
+textarea{
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select{
+  appearance: none !important; 
+  -webkit-appearance: none !important; 
+  border-radius: 0;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    color:#467745;
+    background-color: #f7E4D4;
+
+}
+
+
+
+form {
+    margin: auto;
+    display: flex;
+    height: 50vh;
+    max-width:480px;
+    transform: translate(0, 50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+input {
+    position: relative;
+    background-color: white;
+    height: 64px;
+    padding-left:25px;
+    width:100%;
+
+}
+
+#comment {
+    height: 120px;
+}
+
+.subject,
+.comment,
+.terms {
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color:#467745;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    z-index: 99;
+    margin-left: 40px;
+    width:100%;
+
+}
+
+input[type="checkbox"]:checked:after {
+    content: '\2714';
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    color:#467745;
+    align-self: center;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+button {
+    background-color:#467745;
+    font-size: 21px;
+    color:#f7E4D4;
+    letter-spacing: 0.2em;
+    border-radius:40px;
+    height: 80px;
+    width: 280px;
+    margin-top:32px;
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 36px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 40px);
+        margin-left: 20px;        
+    }
+
+    .terms {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+  }
